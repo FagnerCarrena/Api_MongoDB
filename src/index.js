@@ -1,5 +1,6 @@
 import express from "express";
-import db from "./config/dbConnect.js"
+import db from "./config/dbConnect.js";
+import rotas from "./roteador.js";
 
 db.on("error", console.log.bind(console, "erro de conexão"))
 db.once("open", ()=>{
@@ -7,12 +8,9 @@ db.once("open", ()=>{
 })
 
 
-
-
-import rotas from "./roteador.js";
-
 const app = express();
-app.use(rotas)
 app.use(express.json())
+app.use(rotas)
+
 
 app.listen(3000)
