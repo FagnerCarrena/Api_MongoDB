@@ -5,6 +5,7 @@ import AutoresController from "./controladores/autores.js";
 const rotas = express()
 
 rotas.get("/livros", LivroController.listarLivros)
+rotas.get("/livros/busca", LivroController.listarLivroPorEditora)
 rotas.get("/livros/:id", LivroController.listarLivrosPorId)
 rotas.post("/livros", LivroController.cadastrarLivro)
 rotas.put("/livros/:id", LivroController.atualizarLivro)
