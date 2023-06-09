@@ -3,7 +3,7 @@
 
 
 ##   👌Sobre
-O projeto consiste na criação de uma Api no padrão Rest utilizando o Banco de Dados nosql MongoDB.
+O projeto consiste na criação de uma Api no padrão Rest utilizando o Banco de Dados NoSQL MongoDB.
 
 
 
